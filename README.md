@@ -1,6 +1,4 @@
-Here’s the updated raw markdown (`README.md`) code without the project structure:
 
-```md
 # Task Manager with User Authentication
 
 ## Overview
@@ -58,11 +56,4 @@ python manage.py runserver
 ### 7. Access the App
 Go to `http://127.0.0.1:8000/` in your browser.
 
-## Future Improvements
-- Add task categories or priority levels.
-- Implement task filtering or sorting.
-- Add password reset functionality for users.
-- Implement task deadlines with reminders.
-```
 
-This version focuses on instructions and feature descriptions without the project structure.
