@@ -26,30 +26,25 @@
                 <a class="nav-link" href="/addtasks/">Add Tasks</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/register/">Login/Sign up</a>
+                <a class="nav-link" href="/users/">Login/Sign up</a>
               </li>
             </ul>
           </div>
         </div>
       </nav> 
-      <form method="post" action="/register/"> {% csrf_token %}
+      <form method="post" action="/login/"> {% csrf_token %}
         <div class="mb-3"></div>
           <label for="exampleInputUsername1" class="form-label">Username</label>
           <input name="username" type="text" class="form-control" id="exampleInputUsername1" aria-describedby="usernameHelp">
         </div>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input name="password" type="password" class="form-control" id="exampleInputPassword1">
         </div>
-        <button type="submit" class="btn btn-primary">Register</button>
+        <button type="submit" class="btn btn-primary">Login</button>
       </form>
-      <p>If you already have an account: </p>
-      <a class="btn btn-primary" href="/login/" role="button">Login</a>
+      <p>If you don't have an account: </p>
+      <a class="btn btn-primary" href="/register/" role="button">Register</a>
       {% if messages %}
 <ul class="messages">
     {% for message in messages %}
